@@ -5,13 +5,16 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
+    "oxlint": "oxlint -D all",
+    "oxlint:json": "oxlint -D all --format json",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
     "prettier": "^3.2.5",
-    "turbo": "latest"
+    "turbo": "latest",
+    "oxlint": "latest"
   },
   "engines": {
     "node": ">=18"
